@@ -1,1 +1,0 @@
-# privacychick.github.io
