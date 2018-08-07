@@ -47,16 +47,18 @@
 					<div id="main">
 						<div class="inner">
 							<h1>Email</h1>
-							<!-- <span class="image main">-->
-							<span>
+							<span class="image main">
 								<picture>
+									<!-- when device width is more than 800px -->
     							<source
-										media="(min-width: 900px)"
+										media="(min-width: 800px)"
 										srcset="images/neonbrand-570373-unsplash.jpg">
-    							<source
+									<!-- when device width is more than 480px but less than 800px -->
+									<source
 										media="(min-width: 480px)"
 										srcset="http://www.dnrcustoms.com/uploads/3/1/2/1/31214493/s874906050552617097_p10_i1_w480.jpeg">
-    							<img
+									<!-- fallback, if browser incompatible or width is less than 480px -->
+									<img
 										src="images/vitor-fontes-563175-unsplash.jpg"
 										alt="Photo by NeONBRAND on Unsplash">
 								</picture>
