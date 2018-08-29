@@ -64,20 +64,12 @@
 							</span>
 				<section>
 					<h2>Get in touch</h2>
-					<form name="htmlform" method="post" action="contact_send.php">
-						<div class="field half first">
-							<input type="text" name="name" id="name" placeholder="Name" />
-						</div>
-						<div class="field half">
-							<input type="email" name="email" id="email" placeholder="Email" />
-						</div>
-						<div class="field">
-							<textarea name="message" id="message" placeholder="Message"></textarea>
-						</div>
-						<ul class="actions">
-							<li><input type="submit" value="Send" class="special" /></li>
-						</ul>
-					</form>
+					<script language="JavaScript">
+					var username = "contact";
+					var hostname = "privacychick.io";
+					var linktext = username + "@" + hostname ;
+					document.write("<a href='" + "mail" + "to:" + username + "@" + hostname + "'>" + linktext + "</a>");
+					</script>
 				</section>			
 			</div>
 		</div>
