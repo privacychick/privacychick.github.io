@@ -46,10 +46,25 @@
 		<div id="main">
 			<div class="inner">
 				<h1>Contact</h1>
-				<span class="image main"><img width=1152 height=326 src="images/aaron-burden-64849-unsplash.jpg" alt="Photo by Aaron Burden on Unsplash" /></span>
+							<span class="image main">
+								<picture>
+									<!-- when device width is more than 800px -->
+    									<source
+										media="(min-width: 800px)"
+										srcset="images/aaron-burden-64849-unsplash.jpg">
+									<!-- when device width is more than 480px but less than 800px -->
+									<source
+										media="(min-width: 480px)"
+										srcset="images/aaron-burden-64849-unsplash.jpg">
+									<!-- fallback, if browser incompatible or width is less than 480px, use same image as one above -->
+									<img
+										src="images/aaron-burden-64849-unsplash.jpg"
+										alt="Photo by Aaron Burden on Unsplash">
+								</picture>
+							</span>
 				<section>
 					<h2>Get in touch</h2>
-					<form method="post" action="#">
+					<form name="htmlform" method="post" action="html_form_send.php">
 						<div class="field half first">
 							<input type="text" name="name" id="name" placeholder="Name" />
 						</div>
