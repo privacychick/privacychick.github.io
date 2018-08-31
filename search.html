@@ -47,8 +47,71 @@
 					<div id="main">
 						<div class="inner">
 							<h1>Search Engine</h1>
-							<span class="image main"><img width=1152 height=326 src="images/agnieszka-boeske-359706-unsplash.jpg" alt="Photo by Agnieszka Boeske on Unsplash" /></span>
-							<p>I will explain why not all search engines are the same.</p>
+							<span class="image main">
+								<picture>
+									<!-- when device width is more than 800px -->
+    									<source
+										media="(min-width: 800px)"
+										srcset="images/agnieszka-boeske-359706-unsplash.jpg">
+									<!-- when device width is more than 480px but less than 800px -->
+									<source
+										media="(min-width: 480px)"
+										srcset="images/agnieszka-boeske-359706-unsplash.jpg">
+									<!-- fallback, if browser incompatible or width is less than 480px, use same image as one above -->
+									<img
+										src="images/agnieszka-boeske-359706-unsplash.jpg"
+										alt="Photo by Agnieszka Boeske on Unsplash">
+								</picture>
+							</span>
+							<h2>Why It Matters</h2>
+							<p><a target="_new" href="https://www.quora.com/Why-should-I-use-DuckDuckGo-instead-of-Google">You share your most intimate secrets with your search engine without even thinking: medical, financial and personal issues, along with all the day to day things that make you, well, you. All of that personal information should be private, but on Google it's not. On Google, your searches are tracked, mined, and packaged up into a data profile</a>.</p> 
+
+							<p>Google uses search algorithms that benefit their bottom line. In 2017, <a target="_new" href="https://www.nytimes.com/2017/06/27/technology/eu-google-fine.html">European antitrust officials fined the search giant a record $2.7 billion for unfairly favoring some of its own services over those of rivals</a>. Your search results on Google are not unbiased. They are not ranked <a target="_new" href="http://www.latimes.com/opinion/editorials/la-ed-trump-google-20180829-story.html?outputType=amp">purely on the basis of popularity and authenticity</a>. They are tailored to what your data profile tells them you are most likely to click on, skewed towards services that Google provides. <a target="_new" href="https://nypost.com/2018/08/28/we-should-all-be-worried-about-googles-power/">On the commercial front, Google's power is obvious: Its algorithms can literally make or break a company -- perhaps a whole industry</a>.</p> 
+
+							<p>Shopping is one thing, but what does this mean from the perspective of news and political commentary? <a target="_new" href="https://www.quora.com/Why-should-I-use-DuckDuckGo-instead-of-Google">If you have political leanings one way or another, you're more likely to get results you already agree with, and less likely to ever see opposing viewpoints. In the aggregate this leads to increased echo chambers that are significantly contributing to our increasingly polarized society</a>.</p> 
+
+							<p><a target="_new" href="https://donttrack.us/">Google trackers are lurking on 75% of websites. This means they are not only tracking what you search for, they're also tracking which websites you visit</a>. This data is then used to exploit your historical online conduct for direct advertising and third-party monetization. Let's not also forget the possible legal and reputational issues! <a target="_new" href="https://donttrack.us/">Your personal data remains in Google indefinitely. It can be subpoenaed by lawyers, including civil cases like divorce. Google answered over 100,000 requests last year</a>!</p> 
+
+							<p>Is the answer to simply stop going to google.com? In short, no (though that's a great place to start). Do you still use Gmail, Chrome, YouTube, Google Maps, and the myriad of other services that Google provides? Most websites have a Google Analytics tracker installed, which tracks what you do and then feeds that information back to Google. <a target="_new" href="https://www.quora.com/Why-should-I-use-DuckDuckGo-instead-of-Google">You know those ads that creepily follow you around everywhere? Most of those are actually run through these Google ad networks, where they let advertisers target you against your search history, browsing history, location history and other personal information they collect</a>. DuckDuckGo, in addition to providing a search engine, has also developed a <a target="_new" href="https://duckduckgo.com/app">browser extension and mobile app</a> to combat this tracking, but more on that in a later article.</p> 
+
+							<p>How about incognito mode? Rubbish! All that does is delete your local browsing history when you're done. It still tracks everything you do and everywhere you go, and it still provides this information to Google and other websites that you visit to do with as they see fit. As Google itself states, <a target="_new" href="https://support.google.com/chrome/answer/95464">Your activity isn't hidden from websites you visit, your employer or school, or your internet service provider</a>.</p> 
+
+							<p>Ultimately, you should be able to search without fear. <a target="_new" href="https://www.nytimes.com/2014/04/03/technology/personaltech/sweeping-away-a-search-history.html">Your search history contains some of the most personal information you will ever reveal online: your health, mental state, interests, travel locations, fears and shopping habits</a>. <a target="_new" href="https://www.quora.com/Why-should-I-use-DuckDuckGo-instead-of-Google">Your searches are your business, and you should feel free to search whatever you want, whenever you want</a>.</p> 
+
+							<h2>Why DuckDuckGo</h2>
+							<img height="120" src="images/duckduckgo.png">
+							<p>Stop using google.com and switch to duckduckgo.com. <a target="_new" href="https://duckduckgo.com/about">DuckDuckGo is an Internet privacy company that empowers you to seamlessly take control of your personal information online, without any tradeoffs</a>. They have successfully found a way to provide search engine technologies that do not collect or share your personal information. Their privacy policy outlines the reasons that you should care:</p>
+
+							<ul style="list-style-type:square">
+							<li><b>Search Leakage</b>: This <a target="_new" href="https://techboomers.com/t/is-duckduckgo-safe">is a phenomenon where, when you click on a result from a search engine to go to a website, it sends your Internet address, browser information, and search terms to that website. Therefore, not only does every website that you click on know that you specifically visited them, but they also know what you searched for to find them (and so does the search engine)</a>. DuckDuckGo prevents search leakage by default.</li>
+							<li><b>Search History</b>: Other search engines save your search history (search terms, date and time of search, and identifying details such as IP address or account information). <a target="_new" href="https://duckduckgo.com/privacy">It's sort of creepy that people at search engines can see all this info about you, but that is not the main concern. The main concern is when they either a) release it to the public or b) give it to law enforcement... DuckDuckGo takes the approach to not collect any personal information</a>.</li>
+							<li><b>Information Collected</b>: DuckDuckGo does not know who you are and cannot tie your searches together. They do not store personally identifiable information. They use <a target="_new" href="https://duckduckgo.com/privacy">aggregate, non-personal search data to improve things like misspellings</a>.</li>
+							</ul>
+
+DuckDuckGo has proven that a search engine company can succeed without having to sell or use personal data. It <a target="_new" href="https://techcrunch.com/2018/08/29/duckduckgo-gets-10m-from-omers-for-global-privacy-push/amp/">has been profitable (via non-tracking advertising) since 2014</a>. Rather than focusing on the person, they focus on the keyword search. If you search for "headphones" than the ads you see will be related to "headphones."</p>
+
+							<h2>How to Make the Switch</h2>
+							<p><i><u>Desktop</u></i><br>
+Open your desktop browser (e.g., Chrome, Internet Explorer, Firefox, Safari, Opera, Microsoft Edge), go to <a target="_new" href="https://duckduckgo.com/">DuckDuckGo.com</a>, and <i>Set DuckDuckGo as your default search engine</i> at the bottom of the page (or <i>Add DuckDuckGo as a search engine</i> on the side). You can always go straight to their <a target="_new" href="https://duckduckgo.com/install">install page</a> for browser specifics if you're running into trouble. They also have additional details on their <a target="_new" href="https://duck.co/help/desktop/adding-duckduckgo-to-your-browser">help page</a>.</p>
+
+							<p><i><u>Mobile</u></i><br>
+Browser selection is addressed in a <a target="_new" href="browser.html">different PrivacyChick article</a>. For purposes of this explanation, let's assume you've taken my advice and installed the Firefox mobile browser app (<a target="_new" href="https://itunes.apple.com/us/app/firefox-web-browser/id989804926">iOS</a> | <a target="_new" href="https://play.google.com/store/apps/details?id=org.mozilla.firefox&hl=en_US">Android</a>) on your smart phone and tablet.</p>
+							<img height="100" src="images/firefox.png">
+							<p><ol>
+							<li>Open the Firefox app.</li>
+							<li>Tap the three dots in the upper right corner or the three lines in the lower right corner and tap <i>Settings</i>.</li>
+							<li>Tap <i>Search</i>.</li>
+							<li>Tap <i>Default Search Engine</i> and select <i>DuckDuckGo</i>.</li>
+							<li>Deactivate any other activated <i>Quick-Search Engines</i>.</li>
+							</ol></p>
+
+							<h2>Additional Articles</h2>
+
+							<ul style="list-style-type:square">
+							<li><a target="_new" href="https://duckduckgo.com/traffic">DuckDuckGo Traffic</a></li>
+							<li><a target="_new" href="https://www.fastcompany.com/3026698/inside-duckduckgo-googles-tiniest-fiercest-competitor">Inside DuckDuckGo, Google's Tiniest, Fiercest Competitor</a></li>
+							<li><a target="_new" href="https://arstechnica.com/information-technology/2012/05/private-the-search-engines-that-make-money-by-not-tracking-users/">Private: some search engines make money by not tracking users</a></li>
+							</ul>
 						</div>
 					</div>
 
