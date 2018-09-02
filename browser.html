@@ -39,6 +39,7 @@
 						<ul>
 							<li><a href="index.html">Home</a></li>
 							<li><a href="about.html">About</a></li>
+							<li><a href="blog.html">Blog</a></li>
 							<li><a href="contact.html">Contact</a></li>
 						</ul>
 					</nav>
@@ -47,7 +48,22 @@
 					<div id="main">
 						<div class="inner">
 							<h1>Browser</h1>
-							<span class="image main"><img wifth=1152 height=326 src="images/john-schnobrich-520023-unsplash.jpg" alt="Photo by John Schnobrich on Unsplash" /></span>
+							<span class="image main">
+								<picture>
+									<!-- when device width is more than 800px -->
+    									<source
+										media="(min-width: 800px)"
+										srcset="images/john-schnobrich-520023-unsplash.jpg">
+									<!-- when device width is more than 480px but less than 800px -->
+									<source
+										media="(min-width: 480px)"
+										srcset="images/john-schnobrich-520023-unsplash.jpg">
+									<!-- fallback, if browser incompatible or width is less than 480px, use same image as one above -->
+									<img
+										src="images/john-schnobrich-520023-unsplash.jpg"
+										alt="Photo by John Schnobrich on Unsplash">
+								</picture>
+							</span>
 							<p>I will explain why browser selection is important and which one I chose.</p>
 						</div>
 					</div>
