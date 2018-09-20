@@ -10,8 +10,28 @@
 /* Blog */
 	.byline {
 		font-size: 85%;
-		text-align:right;
-		float:right;
+		text-align: right;
+		float: right;
+	}
+
+/* Geek and Yogi Tips */
+	.center-div {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+/* Random Text Colors */
+	.orange {
+		color: orange;
+	}
+
+	.red {
+		color: red;
+	}
+
+/* Footnotes */
+	.footnote {
+		font-size: 80%;
 	}
 
 /* Reset */
