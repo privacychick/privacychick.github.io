@@ -67,60 +67,71 @@
 										alt="Photo by Vitor Fontes on Unsplash">
 								</picture>
 							</span>
-							<div style="text-align:center"><p><strong><a href="#longer">Longer Explanation</a> | <a href="#how">How to Setup</a> | <a href="#additional">Additional Articles</a></strong></p></div>
+							<div style="text-align:center"><p><strong><a href="#longer">Longer Explanation</a> | <a href=""best-practices">Best Practices for Using 2FA</a> | <a href="#how">How to Setup</a> | <a href="#additional">Additional Articles</a></strong></p></div>
 
 							<h2>Quick Info</h2>
 							<p>2FA stands for Two-Factor Authentication. At its most basic explanation, it adds an additional layer of security for any online account to which it is attached. This is done by way of an extra step in the login process, typically in the form of entering a special one-time numerical code.</p>
 							<div style="text-align:center"><p><img height="300" alt="User Login" src="images/2fa1.PNG"> <img height="300" alt="Two-Factor Authentication" src="images/2fa2.png"> <img height="300" alt="Token" src="images/2fa3.jpg"></p></div>
 
-							<p>This extra step can sometimes be annoying or frustrating, because it involves having to open an additional app and copy/paste a code, but trust me when I say having your account hacked because of insufficient security will be much, much worse. "No password will ever be impenetrable, and no online account can ever be fully secure. But password managers and two-factor authentication can get us as close as possible to that goal. And there's no reason not to use both for every account you have online."<sup>[<a href="#1">1</a>]</sup></p>
+							<p>This extra step can sometimes be annoying or frustrating, because it involves having to open an additional app and copy/paste a code, but trust me when I say having your account hacked because of insufficient security will be much, much worse. "No password will ever be impenetrable, and no online account can ever be fully secure. But password managers and two-factor authentication can get us as close as possible to that goal. And there's no reason not to use both for every account you have online."<sup>[<a href="#1">1</a>]</sup> Many services now offer push-based 2FA, where you simply approve a login request on your phone instead of entering a code. This makes the process quicker and more user-friendly while maintaining strong security.</p>
 							<p>The concept of 2FA has been around for quite a while. "When you use your credit card and you must enter in your ZIP code to confirm a charge, that's an example of 2FA in action. You must provide a physical factor, the card, and a knowledge factor, the ZIP code."<sup>[<a href="#2">2</a>]</sup></p>
 
 							<div id="longer"><h2>Longer Explanation</h2></div>
 							<p>To be clear, <u><b>any 2FA is better than no 2FA</b></u>. If you're only credentials for an online account are your username and password, it's simply a matter of time before that account gets hacked, if it hasn't been already. How does that happen?</p>
 							<ul style="list-style-type:square; padding-left:50px">
 							<li><b>Data Breaches</b>: If you've reused the same password across multiple accounts and a data breach occurs (<a target="new" href="https://en.wikipedia.org/wiki/List_of_data_breaches">which is becoming all too common nowadays</a>), the attackers could use the same login credentials elsewhere.</li>
-							<li><b>Keyloggers</b>: "Keyloggers are malicious pieces of software that can run in the background, logging every key stroke you make. They're often used to capture sensitive data like credit card numbers, online banking passwords, and other account credentials. They then send this data to an attacker over the Internet."<sup>[<a href="#3">3</a>]</sup> This software can get onto your system by way of malware. "Malware, a shortened combination of the words <strong class="orange">mal</strong>icious and soft<strong class="orange">ware</strong>, is a catch-all term for any sort of software designed with malicious intent."<sup>[<a href="#4">4</a>]</sup></li>
+							<li><b>Keyloggers</b>: "Keyloggers are malicious pieces of software that can run in the background, logging every key stroke you make. They're often used to capture sensitive data like credit card numbers, online banking passwords, and other account credentials. They then send this data to an attacker over the Internet."<sup>[<a href="#3">3</a>]</sup> To protect against keyloggers, always keep your software updated, use reputable antivirus programs, and avoid downloading files or clicking links from unknown sources. This software can get onto your system by way of malware. "Malware, a shortened combination of the words <strong class="orange">mal</strong>icious and soft<strong class="orange">ware</strong>, is a catch-all term for any sort of software designed with malicious intent."<sup>[<a href="#4">4</a>]</sup></li>
 							<li><b>Social Engineering</b>: "Phishing is a commonly known form of social engineering - essentially, the attacker impersonates someone and asks for your password. Some users hand their passwords over readily."<sup>[<a href="#5">5</a>]</sup></li>
 							<li><b>Security Questions</b>: Password resets by way of answering security questions (e.g., last four of social, birthplace, mother's maiden name, high school name). This is often publicly available information. Select security questions where the answers truly would only be known by you.</li>
 							</ul>
-							<p>At a minimum, you should have 2FA enabled for all online financial accounts and your email account, though I recommend doing it for every account that offers it. That said, not all 2FA's are created equal. There are many different types. The one I recommend that is a nice balance of security and ease of use:</p>
+							<p>At a minimum, you should have 2FA enabled for all online financial accounts and your email account, though I recommend doing it for every account that offers it. Some services are moving toward passwordless authentication, which combines biometrics or security keys with 2FA for even stronger protection. While passwords remain common, these advancements may become the standard in the near future. That said, not all 2FA's are created equal. There are many different types. The one I recommend that is a nice balance of security and ease of use:</p>
 							<ul style="list-style-type:square; padding-left:50px">
 							<li><b>Authenticator Application</b>: This is an app that you install on your smart phone. Though there are several out there, I happen to use and recommend <a target="new" href="https://www.authy.com">Authy</a>. <a target="new" href="https://authy.com/blog/authy-vs-google-authenticator/">One reason I like it is because it can be synced across my smart phone, tablet, and desktop. It also offers encrypted recovery backups.</a></li>
 							</ul>
 							<p>The "better than nothing" options are:</p>
 							<ul style="list-style-type:square; padding-left:50px">
-							<li><b>Text Message (SMS) or Voice</b>: A text message (or voice call) with a special code is sent to your phone. This is a less ideal option given that your messages could get intercepted. Security experts proved this vulnerability by hacking into a Gmail account set up with SMS 2FA: "By exploiting SS7 weaknesses they were able to intercept text messages containing those codes, allowing them to choose a new password and take control of the Gmail account."<sup>[<a href="#6">6</a>]</sup></li>
-							<li><b>Email</b>: An email is sent with a special code. This is a less ideal option because if your email account has been hacked than the hacker can more easily gain access to your other online accounts.</li>
+							<li><b>Text Message (SMS) or Voice</b>: A text message (or voice call) with a special code is sent to your phone. This is a less ideal option given that your messages could get intercepted. Security experts proved this vulnerability by hacking into a Gmail account set up with SMS 2FA: "By exploiting SS7 weaknesses they were able to intercept text messages containing those codes, allowing them to choose a new password and take control of the Gmail account."<sup>[<a href="#6">6</a>]</sup> Additionally, SMS-based 2FA is vulnerable to SIM-swapping attacks, where hackers take control of your phone number by tricking your carrier. This is why app-based or physical token authentication is strongly recommended over SMS.</li>
+							<li><b>Email</b>: An email is sent with a special code. This is a less ideal option because if your email account has been hacked than the hacker can more easily gain access to your other online accounts. If you must use email for 2FA codes, ensure your email account itself is protected with a strong password and app-based two-factor authentication.</li>
 							</ul>
 							<p>If you want to take your security to the next level, than try this:</p>
 							<ul style="list-style-type:square; padding-left:50px">
-							<li><b>Physical Token</b>: This is referred to as U2F (Universal 2nd Factor). One example is <a target="new" href="https://www.yubico.com">YubiKey</a>. It is a small, physical device (fits on your keychain) that plugs into your computer (USB) or sits near your smart device (NFC). "Google has not had any of its 85,000+ employees successfully phished on their work-related accounts since early 2017, when it began requiring all employees to use physical Security Keys in place of passwords and one-time codes."<sup>[<a href="#7">7</a>]</sup></li>
+							<li><b>Physical Token</b>: This is referred to as U2F (Universal 2nd Factor). One example is <a target="new" href="https://www.yubico.com">YubiKey</a>. It is a small, physical device (fits on your keychain) that plugs into your computer (USB) or sits near your smart device (NFC). Some physical tokens now support Bluetooth connectivity, making them compatible with more devices. YubiKey is one of the most popular options for robust hardware-based security. "Google has not had any of its 85,000+ employees successfully phished on their work-related accounts since early 2017, when it began requiring all employees to use physical Security Keys in place of passwords and one-time codes."<sup>[<a href="#7">7</a>]</sup></li>
 							</ul>
 							<p>Lastly, in addition to one of the above, you should always activate this when available:</p>
 							<ul style="list-style-type:square; padding-left:50px">
 							<li><b>Biometric</b>: Fingerprint, voice print, or face ID. This is a great option for smart phone logins and greatly simplifies the login process. However, it does not help when logging in on a computer. I would normally use biometrics on my phone, but not in place of an additional 2FA.</li>
 							</ul>
-
-
+							<div id="best-practices"><h2>Best Practices for Using 2FA</h2></div>
+							<p>To get the most out of two-factor authentication, follow these best practices:</p>
+							<ul style="list-style-type:square; padding-left:50px">
+							  <li>Always enable app-based or hardware token authentication when available.</li>
+							  <li>Keep backup codes in a secure location in case you lose access to your primary device.</li>
+							  <li>Regularly review which accounts have 2FA enabled and ensure no critical accounts are left unprotected.</li>
+							  <li>Be cautious about phishing attempts that try to trick you into providing your one-time codes.</li>
+							  <li>If using SMS-based authentication as a last resort, contact your carrier to add extra protections against SIM-swapping attacks.</li>
+							</ul>							
 							<div id="how"><h2>How to Setup</h2></div>
 							<p>Typically, within your online account security settings, there will be an option to enable two-factor authentication. Here are some walk-through examples:</p>
 							<ul style="list-style-type:square; padding-left:50px">
 							<li><a target="new" href="https://authy.com/guides/amazon/">Amazon</a></li>
 							<li><a target="new" href="https://authy.com/guides/apple/">Apple</a></li>
+							<li><a target="new" href="https://authy.com/guides/discord/">Discord</a></li>
 							<li><a target="new" href="https://www.facebook.com/help/loginapprovals">Facebook</a></li>
 							<li><a target="new" href="https://authy.com/guides/instagram/">Instagram</a></li>
 							<li><a target="new" href="https://www.linkedin.com/help/linkedin/answer/544/turning-two-step-verification-on-and-off">LinkedIn</a></li>
 							<li><a target="new" href="https://authy.com/guides/pinterest/">Pinterest</a></li>
 							<li><a target="new" href="https://protonmail.com/support/knowledge-base/two-factor-authentication/">ProtonMail</a></li>
-							<li><a target="new" href="https://help.twitter.com/en/managing-your-account/two-factor-authentication">Twitter</a></li>
+							<li><a target="new" href="https://help.x.com/en/managing-your-account/two-factor-authentication">X</a></li>
+							<li><a target="new" href="https://support.zoom.us/hc/en-us/articles/360038247071-Enabling-and-signing-in-with-two-factor-authentication">Zoom</a></li>
 							</ul>
+							<p>When setting up two-factor authentication, most services will provide backup codes that can be used if you lose access to your primary device. Store these codes securely—preferably in an encrypted password manager—to ensure you can still access your account if needed.</p>
 
 							<div id="additional"><h2>Additional Articles</h2></div>
 							<ul style="list-style-type:square">
-							<li> Mat Honan, "<a target="new" href="https://www.wired.com/2012/08/apple-amazon-mat-honan-hacking/">How Apple and Amazon Security Flaws Led to My Epic Hacking</a>," Wired, August 6, 2012.</li>
-							<li> stellabelle, "<a target="new" href="https://steemit.com/security/@stellabelle/what-is-u2f-if-you-use-text-messaging-as-your-two-factor-authentication-for-coinbase-gmail-you-need-to-read-this-now">What is U2F? If You Use Text Messaging As Your Two Factor Authentication For Coinbase/Gmail, You Need To Read This Now</a>," Steemit, 2017.</li>
-							</ul>
+							<li> Brian Krebs, "<a target="new" href="https://krebsonsecurity.com/2023/07/the-new-rules-of-two-factor-authentication/">The New Rules of Two-Factor Authentication</a>," Krebs on Security, July 2023.</li>
+  							<li> PCMag Editors, "<a target="new" href="https://www.pcmag.com/picks/the-best-authentication-apps">The Best Two-Factor Authentication Apps</a>," PCMag, December 2024.</li>
+ 					 		<li> Proton Team, "<a target="new" href="https://proton.me/blog/two-factor-authentication-guide">Two-Factor Authentication Guide</a>," Proton Blog, October 2024.</li>
+  							<li> Wired Editors, "<a target="new" href="https://www.wired.com/story/how-to-set-up-two-factor-authentication/">How to Set Up Two-Factor Authentication</a>," Wired, November 2023.</li></ul>
 
 							<h2>Footnotes</h2>
 							<span class="footnote"><sup id="1">[1]</sup> Tim Herrera, "<a target="new"  href="https://www.nytimes.com/2017/08/13/smarter-living/password-manager-two-factor-verification.html">The Two Online Security Steps You Should Stop Putting Off</a>," The New York Times, August 13, 2017.<br>
