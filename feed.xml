@@ -9,6 +9,14 @@
      rel="self" type="application/rss+xml" />
 
 	<item>
+		<title>I'm Back!</title>
+		<link>https://privacychick.io/blog.html#3</link>
+		<guid>https://privacychick.io/blog.html#3</guid>
+		<pubDate>Mon, 3 Feb 2025 00:00:00 EST</pubDate>
+		<description>It has been over six years since the last update to this website, and so much has happened in the world since then.</description>
+	</item>
+
+	<item>
 		<title>1 Thing You Can Do To Make Your Internet Safer And Faster</title>
 		<link>https://privacychick.io/blog.html#2</link>
 		<guid>https://privacychick.io/blog.html#2</guid>
